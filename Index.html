@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AglomeDaroa — Aglomerados y Soluciones</title>
+    <meta
+      name="description"
+      content="AglomeDaroa — Soluciones integrales en aglomerados y materiales para obras. Calidad, innovación y servicio."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a class="brand" href="#">
+          <div class="logo">AD</div>
+          <div>
+            <h1>AglomeDaroa</h1>
+            <span>Soluciones en aglomerados y materiales</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <a href="#servicios">Servicios</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto" class="cta">Habla con nosotros</a>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-card appear" id="hero-left">
+          <span class="kicker">Productos industriales • Proyectos</span>
+          <h2>Materiales aglomerados de calidad para obras y fabricación</h2>
+          <p class="lead">
+            Fabricamos soluciones a medida para pavimentos, construcción y
+            aplicaciones industriales. Innovación, durabilidad y atención
+            técnica desde el primer contacto.
+          </p>
+
+          <div class="features">
+            <div class="feat">
+              <div class="icon">Q</div>
+              <div>
+                <div style="font-weight: 800">Alta resistencia</div>
+                <div class="muted">Pruebas y control de calidad</div>
+              </div>
+            </div>
+
+            <div class="feat">
+              <div class="icon">⚙</div>
+              <div>
+                <div style="font-weight: 800">Soluciones a medida</div>
+                <div class="muted">Asesoría técnica y diseño</div>
+              </div>
+            </div>
+
+            <div class="feat">
+              <div class="icon">🚚</div>
+              <div>
+                <div style="font-weight: 800">Logística segura</div>
+                <div class="muted">Entrega puntual a obra</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 18px; display: flex; gap: 12px">
+            <a class="cta" href="#contacto">Solicitar presupuesto</a>
+            <a class="btn-sec" href="#portafolio">Ver proyectos</a>
+          </div>
+
+          <div
+            style="margin-top: 18px; color: var(--muted); font-size: 0.95rem"
+          >
+            <strong>Proyectos recientes:</strong> Pavimentos comerciales, placas
+            industriales, revestimientos de alta carga.
+          </div>
+        </div>
+
+        <aside class="hero-side appear" id="hero-right">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div>
+              <div class="muted">Empresa</div>
+              <div style="font-weight: 800; font-size: 1.1rem">
+                AglomeDaroa S.A.S
+              </div>
+            </div>
+            <div style="text-align: right">
+              <div class="muted">Años</div>
+              <div style="font-weight: 800; font-size: 1.1rem">+12</div>
+            </div>
+          </div>
+
+          <div class="stats" style="margin-top: 16px">
+            <div class="stat">
+              <div class="muted">m² producidos</div>
+              <b>1.200.000</b>
+            </div>
+            <div class="stat">
+              <div class="muted">Clientes</div>
+              <b>320</b>
+            </div>
+            <div class="stat">
+              <div class="muted">Satisfacción</div>
+              <b>98%</b>
+            </div>
+          </div>
+
+          <div style="margin-top: 18px">
+            <div class="muted">Contacto técnico</div>
+            <div style="margin-top: 8px; font-weight: 800">
+              ingenieria@aglomedaroa.com
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Servicios -->
+      <section id="servicios" class="appear">
+        <h2>Nuestros servicios</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Fabricación de aglomerados</h3>
+            <p class="muted">
+              Producción bajo especificaciones del cliente: densidad, rugosidad,
+              resistencia y granulometría controlada.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Consultoría técnica</h3>
+            <p class="muted">
+              Asesoría especializada para seleccionar materiales y procesos
+              adecuados a la aplicación final.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Instalación y logística</h3>
+            <p class="muted">
+              Coordinamos entrega, manejo en obra y supervisión para garantizar
+              tiempos y calidad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portafolio -->
+      <section id="portafolio" class="appear">
+        <h2>Portafolio</h2>
+        <div class="controls" role="tablist" aria-label="Filtrar proyectos">
+          <button class="btn-filter active" data-filter="all">Todos</button>
+          <button class="btn-filter" data-filter="pavimento">Pavimentos</button>
+          <button class="btn-filter" data-filter="industrial">
+            Industrial
+          </button>
+          <button class="btn-filter" data-filter="comercial">Comercial</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio">
+          <div class="project" data-cat="pavimento">
+            <span class="tag">Pavimento</span>
+            <div style="font-weight: 800">
+              Supermercado Central — Acabado duradero
+            </div>
+          </div>
+          <div class="project" data-cat="industrial">
+            <span class="tag">Industrial</span>
+            <div style="font-weight: 800">
+              Planta logística — Placas de alta carga
+            </div>
+          </div>
+          <div class="project" data-cat="comercial">
+            <span class="tag">Comercial</span>
+            <div style="font-weight: 800">
+              Centro comercial — Revestimiento estético
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nosotros -->
+      <section id="nosotros" class="appear">
+        <h2>Sobre nosotros</h2>
+        <div class="nosotros-content">
+          <div>
+            <p class="muted">
+              AglomeDaroa es una empresa dedicada a la producción y desarrollo
+              de aglomerados para usos industriales y civiles.
+            </p>
+            <ul>
+              <li>Control de calidad certificado</li>
+              <li>Laboratorio interno de ensayos</li>
+              <li>Equipos técnicos y logísticos propios</li>
+            </ul>
+          </div>
+          <div class="compromiso">
+            <div>
+              <div style="font-size: 0.9rem">Compromiso ambiental</div>
+              <div style="font-size: 1.3rem; margin-top: 8px">
+                Procesos con menor huella
+              </div>
+              <div
+                style="
+                  font-size: 0.85rem;
+                  margin-top: 6px;
+                  color: #06363a;
+                  font-weight: 600;
+                "
+              >
+                Reciclamos materiales y optimizamos consumo energético.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="appear">
+        <h2>Contacto</h2>
+        <div class="contact">
+          <form id="contactForm" aria-label="Formulario de contacto">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Tu nombre completo"
+              required
+            />
+
+            <label for="email">Correo</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@correo.com"
+              required
+            />
+
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Cuéntanos sobre tu proyecto..."
+              required
+            ></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+            <div id="formMsg" class="muted" style="margin-top: 10px"></div>
+          </form>
+
+          <aside>
+            <h3>Visítanos / Llámanos</h3>
+            <div class="muted">Dirección</div>
+            <div style="font-weight: 800; margin-bottom: 8px">
+              Carrera 45 # 12-34, Ciudad
+            </div>
+            <div class="muted">Teléfono</div>
+            <div style="font-weight: 800; margin-bottom: 8px">
+              +57 300 000 0000
+            </div>
+            <div class="muted">Horario</div>
+            <div style="font-weight: 800">Lun - Vie 7:30 - 17:30</div>
+          </aside>
+        </div>
+      </section>
+
+      <footer>
+        <div>
+          <div style="font-weight: 800">AglomeDaroa S.A.S</div>
+          <div class="muted">
+            © <span id="year"></span> Todos los derechos reservados
+          </div>
+        </div>
+        <div class="muted">Síguenos: LinkedIn • Twitter • Instagram</div>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
