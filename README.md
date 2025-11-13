@@ -1,68 +1,35 @@
-Red Route - Entelgy — Prototipo Dashboard Web
+# 🚢 Red Route - Entelgy — Prototipo Dashboard Web
 
-Red Route - Entelgy es un prototipo funcional de dashboard web diseñado para la gestión de solicitudes, aprobaciones, repositorios de archivos, monitoreo y reportes administrativos.
-El sistema reproduce el flujo de trabajo entre diferentes roles (operadores, revisores y administradores), facilitando la comprensión del proceso interno de operaciones.
+**Red Route - Entelgy** es un prototipo funcional e interactivo (Web + Mobile) para la gestión de solicitudes, autorizaciones, repositorios, monitoreo y reportes.
 
-Demo en línea
+Demo: https://angel-2904.github.io/Prototipos-web/
 
-Ver prototipo en GitHub Pages
+## Entregables
 
-Descripción general
+- `index.html` — Prototipo responsive con menú hamburguesa y modales.
+- `styles.css` — Estilos dark + light (Tech Gray) y responsive completo.
+- `script.js` — Lógica: navegación, modales, repo, comentarios, modo tema y persistencia.
+- `README.md` — Este archivo.
+- `assets/` — Carpeta para capturas e íconos (anexar capturas aquí para PDF).
 
-Este proyecto fue desarrollado dentro del taller de prototipos web interactivos, con el propósito de representar de forma visual e intuitiva los flujos funcionales de una aplicación de control operativo.
-Su interfaz responsiva y moderna busca simular un entorno administrativo real, incluyendo módulos de solicitudes, aprobaciones, repositorio de archivos y reportes.
+## Cómo usar localmente
 
-Características principales
+1. Guarda los archivos en la misma carpeta (`index.html`, `styles.css`, `script.js`, `README.md`).
+2. Abre `index.html` en tu navegador (o sirve con Live Server / GitHub Pages).
+3. Para ver la versión mobile: abre DevTools (F12) y activa el icono de dispositivo (Ctrl+Shift+M) o usa cualquier extensión de simulador mobile.
 
-Dashboard general: muestra métricas clave como solicitudes activas, pendientes y archivos cargados.
+## Notas importantes
 
-Gestión de solicitudes: permite crear, consultar y registrar solicitudes con campos dinámicos.
+- El modo oscuro es el predeterminado; el usuario puede alternar al modo claro (Tech Gray) con el botón sol/luna (arriba a la derecha). La preferencia se guarda en `localStorage`.
+- Todos los apartados incluyen formularios de comentarios que se guardan localmente (key: `redroute_comments_v1`) o pueden enviarse a Formspree si configuras `FORMSPREE_ENDPOINT` en `script.js`.
+- El proyecto está listo para subir a GitHub Pages.
 
-Autorizaciones: módulo para aprobar o rechazar solicitudes pendientes.
+## Recomendaciones para la entrega (PDF y Video)
 
-Repositorio: simula la carga y validación de archivos.
+- Captura cada pantalla (Dashboard, Solicitudes, Autorizaciones, Repositorio, Histórico, Monitoreo, Reportes, Administración).
+- Añade descripciones y la retroalimentación de pruebas de usabilidad bajo cada captura.
+- Graba un video de ~5 minutos mostrando los flujos principales en desktop y mobile (usa DevTools para mobile).
 
-Histórico: presenta el registro completo de solicitudes y su estado.
+---
 
-Monitoreo: panel con indicadores del sistema.
-
-Reportes: opción para exportar la información en formato CSV.
-
-Administración: permite gestionar usuarios, roles y permisos.
-
-Comentarios: secciones activas para registrar observaciones en cada pantalla durante las pruebas de usabilidad.
-
-Flujo funcional
-
-El usuario ingresa al Dashboard para visualizar el resumen general.
-
-Desde allí puede acceder al módulo de Solicitudes y registrar una nueva entrada.
-
-Las solicitudes avanzan al módulo de Autorizaciones, donde se aprueban o rechazan.
-
-Los resultados se actualizan automáticamente en el Histórico.
-
-En el Repositorio, los usuarios cargan archivos que también pueden ser validados.
-
-Los módulos de Monitoreo y Reportes permiten revisar indicadores y exportar datos.
-
-Finalmente, en Administración se gestionan los usuarios y sus permisos.
-
-Tecnologías utilizadas
-Categoría	Tecnología
-Lenguajes base	HTML5, CSS3, JavaScript
-Diseño visual	Paleta oscura con tonos #4AA3FF y #5DD6B4
-Almacenamiento local	LocalStorage (para persistencia temporal)
-Dependencias	Ninguna (código nativo)
-Hosting	GitHub Pages
-Formularios externos	Integración con Formspree (opcional)
-Estructura del proyecto
-Prototipos-web/
-├── index.html  
-├── css/  
-│   └── styles.css  
-├── js/  
-│   └── main.js  
-├── img/  
-│   └── recursos gráficos del dashboard  
-└── README.md
+Desarrollado por: Equipo SISO — Red Route - Entelgy
